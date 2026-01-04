@@ -9,15 +9,8 @@
 </head>
 <body>
     <nav>
-        <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><span class="material-symbols-outlined">close</span></a></li>
-            <li><a href="#">History</a></li>            
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li> 
-        </ul>
-        <ul>
+
+        <ul class="adjustted">
             <li><a href="#">Coding2g0</a></li>
             <li class="hideOnMobile"><a href="#">History</a></li>            
             <li class="hideOnMobile"><a href="#">Products</a></li>
@@ -26,16 +19,26 @@
             <li class="hideOnMobile"><a href="#">Login</a></li> 
             <li class="menu-button"  onclick=showSidebar()><a href="#"><span class="material-symbols-outlined">menu</span></a></li>
         </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><span class="material-symbols-outlined">close</span></a></li>
+            <li><a href="#">History</a></li>            
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li> 
+        </ul>
     </nav>
     <script>
-        function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
         function hideSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
     </script>
 
 
